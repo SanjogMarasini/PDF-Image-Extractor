@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Image Extractor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>PDF to Images Extractor</h1>
+    <p class="subtitle">
+      Upload a PDF and download each page as an image.
+    </p>
+
+    <div class="upload-box">
+      <input type="file" id="pdfInput" accept="application/pdf">
+      <button id="extractBtn">Extract Images</button>
+    </div>
+
+    <div class="controls">
+      <button id="downloadAllBtn" disabled>Download All Images (.zip)</button>
+    </div>
+
+    <div id="status"></div>
+
+    <div id="gallery"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
